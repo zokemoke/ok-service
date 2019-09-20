@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const port = 5000;
+const port = process.env.PORT || 5000;
 const db = "mongodb+srv://token:1234@cluster0-p38df.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
 const nhso = require("./routes/nhso");
