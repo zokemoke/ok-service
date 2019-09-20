@@ -19,8 +19,7 @@ app.use(
 app.use("/nhso", nhso);
 
 app.get("/", function(req, res) {
-  console.log("app starting on port: " + port);
-  res.send("tes express nodejs mongodb");
+  res.send("hello world");
 });
 
 app.listen(port, function() {
