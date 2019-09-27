@@ -29,10 +29,11 @@ function findOneAndUpdate(res, filter, data) {
         message:err.message
       });
     } else {
-      res.json({
-        status:'success',
-        data: data
-      });
+      find(res)
+      // res.json({
+      //   status:'success',
+      //   data: data
+      // });
     }
   });
 }
